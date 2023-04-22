@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
+</head>
+
+<body>
+    <main>
+        <div class="eisenhower">
+            <img class="eisenhower__img" src="./eisenhower-matrix.jpg" alt="matrix__image" title="eisenhower__matrix">
+            <a class="eisenhower__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more
+                details?</a>
+        </div>
+
+        <div class="todo__container">
+            <h5 class="todo__title" id="topSectionForAddingElementToList">
+                <label class="todo__label todo__label-add" for="new-task">Add Item</label>
+                <div class="todo__add task-row-wrapper">
+                    <input class="todo__input task" id="new-task" type="text">
+                    <button class="buttons">Add</button>
+                </div>
+            </h5>
+
+            <h5 class="todo__title">Todo</h5>
+
+            <ul class="task__list" id="incompleteTasks">
+                <li class="task__list-item">
+                    <input class="task__list-item__checkbox" type="checkbox">
+                    <label class="task__list-item__label task">Pay Bills</label>
+                    <input class="todo__input task" type="text">
+                    <button class="edit buttons">Edit</button>
+                    <button class="delete buttons">
+                        <img class="remove__img" src="./remove.svg" alt="remove__icon">
+                    </button>
+                </li>
+
+                <li class="task__list-item editMode">
+                    <input class="task__list-item__checkbox" type="checkbox">
+                    <label class="task__list-item__label task">Go Shopping</label>
+                    <input class="todo__input task" type="text" value="Go Shopping">
+                    <button class="edit buttons">Save</button>
+                    <button class="delete buttons">
+                        <img class="remove__img" src="./remove.svg" alt="remove__icon">
+                    </button>
+                </li>
+            </ul>
+
+            <h3 class="todo__title">Completed</h3>
+
+            <ul class="task__list" id="completed-tasks">
+                <li class="task__list-item">
+                    <input class="task__list-item__checkbox" type="checkbox" checked>
+                    <label class="task__list-item__label task">See the Doctor</label>
+                    <input class="todo__input task" type="text">
+                    <button class="edit buttons">Edit</button>
+                    <button class="delete buttons">
+                        <img class="remove__img" src="./remove.svg" alt="remove__icon">
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+
+    <script type="text/javascript" SRC="app.js"></script>
+</body>
+
+</html>
